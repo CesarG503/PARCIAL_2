@@ -37,11 +37,11 @@ class IndexController{
         else{
             $cuota = $capital * ($i * pow((1+$i),$n)  ) / ( pow((1+$i),$n) - 1);
 
-            for ($i=1; $i <= $n; $i++)
+            for ($j=1; $j <= $n; $j++)
             { 
                 
 
-                array_push( $transacciones, ["mes"=> $i,"cuota"=> $cuota, "capital"=> $capital]);
+                array_push( $transacciones, ["mes"=> $i,"cuota"=> $cuota, "capital"=> $capital,"interes"=> $i , "saldo" => $capital ] );
                 $capital -= $cuota;
           
             }

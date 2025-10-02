@@ -67,7 +67,9 @@
                 <tr>
                     <td><?php echo $trasaccion["mes"] ?></td>
                     <td><?php echo $trasaccion["cuota"] ?></td>
+                    <td><?php echo $trasaccion["interes"] ?></td>
                     <td><?php echo $trasaccion["capital"] ?></td>
+                    <td><?php echo $trasaccion["saldo"] ?></td>
                 </tr>
          <?php endforeach;?>
         <?php else: ?>
